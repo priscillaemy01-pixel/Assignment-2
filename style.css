@@ -9,6 +9,7 @@ body {
     color: #263b2f;
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.65;
+    text-wrap: pretty;
 }
 
 header,
@@ -20,6 +21,7 @@ h1 {
     color: #1b3324;
     text-align: center;
     text-shadow: 0 2px 8px rgba(20, 70, 45, 0.35);
+    text-wrap: balance;
 }
 
 main {
@@ -54,6 +56,36 @@ footer {
 
 footer a {
     color: #14532d;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color-scheme: dark;
+        background: linear-gradient(135deg, #17251b 0%, #1d2d22 52%, #243a2b 100%);
+        color: #e1eee4;
+    }
+
+    h1 {
+        color: #e1eee4;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+        background: rgba(31, 47, 36, 0.96);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+        color: #8fd0a5;
+    }
+
+    footer {
+        color: #e1eee4;
+    }
+
+    footer a {
+        color: #a5e6b8;
+    }
 }
 
 @media (max-width: 600px) {
