@@ -58,7 +58,7 @@ footer a {
     color: #14532d;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) { /* this is dark mode */
     body {
         color-scheme: dark;
         background: linear-gradient(135deg, #17251b 0%, #1d2d22 52%, #243a2b 100%);
